@@ -8,24 +8,118 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <h1 id="title">Website Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve our website!</p>
+    <form id="survey-form" method="POST" onSubmit="submitAlert()">
+      <!-- name, email, age -->
+      <fieldset>
+        <label for="name" id="name-label">Name <span class="req-opt">(required)</span>
+          <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+        </label>
+        <label for="email" id="email-label">Email <span class="req-opt">(required)</span>
+          <input type="email" id="email" name="email" placeholder="jdoe@gmail.com" required />
+        </label>
+        <label for="age" id="number-label">Age <span class="req-opt">(optional)</span>
+          <input type="number" id="age" name="age" min="13" max="120" />
+        </label>
+      </fieldset>
+
+      <!-- Visited pages -->
+      <fieldset>
+        <p id="visited-pages">Which pages did you visit? <span class="req-opt">(required)</span></p>
+        <label for="home">
+          <input type="checkbox" id="home" name="home" value="Home" checked />
+          Home
+        </label>
+        <label for="menu">
+          <input type="checkbox" id="menu" name="menu" value="Menu" />
+          Menu
+        </label>
+        <label for="reviews">
+          <input type="checkbox" id="reviews" name="reviews" value="Reviews" />
+          Reviews
+        </label>
+        <label for="about">
+          <input type="checkbox" id="about" name="about" value="About" />
+          About
+        </label>
+        <label for="contact">
+          <input type="checkbox" id="contact" name="contact" value="Contact" />
+          Contact
+        </label>
+        <label for="order">
+          <input type="checkbox" id="order" name="order" value="Order" />
+          Order
+        </label>
+      </fieldset>
+
+      <!-- Rating -->
+      <fieldset>
+        <p>What would you rate your overall experience with the website? <span class="req-opt">(required)</span></p>
+        <label for="one">
+          <input type="radio" id="one" name="overall" />
+          1 (terrible)
+        </label>
+        <label for="two">
+          <input type="radio" id="two" name="overall" />
+          2
+        </label>
+        <label for="three">
+          <input type="radio" id="three" name="overall" />
+          3
+        </label>
+        <label for="four">
+          <input type="radio" id="four" name="overall" />
+          4
+        </label>
+        <label for="five">
+          <input type="radio" id="five" name="overall" checked />
+          5 (meh)
+        </label>
+        <label for="six">
+          <input type="radio" id="six" name="overall" />
+          6
+        </label>
+        <label for="seven">
+          <input type="radio" id="seven" name="overall" />
+          7
+        </label>
+        <label for="eight">
+          <input type="radio" id="eight" name="overall" />
+          8
+        </label>
+        <label for="nine">
+          <input type="radio" id="nine" name="overall" />
+          9
+        </label>
+        <label for="ten">
+          <input type="radio" id="ten" name="overall" />
+          10 (perfect)
+        </label>
+      </fieldset>
+
+      <!-- SEO -->
+      <fieldset>
+        <label for="dropdown">How did you hear about us? <span class="req-opt">(optional)</span>
+          <select id="dropdown">
+            <option value="no-response">(select an option)</option>
+            <option value="search-engine">Search engine</option>
+            <option value="social-media">Social media</option>
+            <option value="word-of-mouth">Friend or colleague</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <!-- Comments/suggestions -->
+      <fieldset>
+        <label for="add-comments">Do you have any additional comments or suggestions to improve our site? <span class="req-opt">(optional)</span>
+          <textarea id="add-comments"></textarea>
+        </label>
+      </fieldset>
+
+      <input type="submit" name="submit" id="submit" value="Submit" />
+    </form>
 		<script src="app.js"></script>
   </body>
 </html>
-
-<!--
-  og link: https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form
-
-  Name *, email *, age [optional] (text, email, number)
-
-  How did you hear about us? * (dropdown)
-
-  What webpages did you visit? * (checkbox)
-
-  What was your experience with each of them? Rate on a scale from 1 to 10. (radio) *
-
-  Additional comments/suggestions? [optional] (textarea)
-
-  design ideas: modern (sans-serif, rounded, whitespace), separate form from background (shadow? color change?), Google Forms-esque (albeit not completely lol)
-
-  popup or separate page to say thanks!
--->
