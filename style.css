@@ -17,6 +17,7 @@ body {
 	/* default styles below */
 	min-height: 100vh;
 	/* not default styles below */
+	font-family: "Rubik", sans-serif;
 }
 
 img {
