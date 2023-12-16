@@ -1,34 +1,27 @@
 * {
-	/* default styles below */
 	box-sizing: border-box;
-	/* font-size: 18px */ /* <- only use if really desired */
-	margin: 0;
-	padding: 0;
-	/* not default styles below */
-}
-
-html {
-	/* default styles below */
-	scroll-behavior: smooth;
-	/* not default styles below */
-}
-
-body {
-	/* default styles below */
-	min-height: 100vh;
-	/* not default styles below */
 	font-family: "Rubik", sans-serif;
 }
 
-img {
-	/* default styles below */
-	display: block;
-	max-width: 100%;
-	/* not default styles below */
+:root {
+	--primary-purple: #7031C9;
+	--neutral-black: #000;
+	--neutral-white: #FFF;
 }
 
-button {
-	/* default styles below */
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	/* set bg + add 40% shadow */
+	background-image: url(bg-img.png);
+}
+
+h1 {
+	font-weight: bold;
+}
+
+input[type="submit"] {
 	cursor: pointer;
-	/* not default styles below */
 }
