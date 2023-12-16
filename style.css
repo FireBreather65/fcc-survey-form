@@ -24,7 +24,7 @@ form {
 	border-radius: 5px;
 	margin: 2em auto 2em auto;
 	min-width: 300px;
-	max-width: 600px;
+	max-width: 750px;
 	width: 80vw;
 }
 
@@ -35,7 +35,21 @@ input[type="submit"] {
 	color: var(--neutral-white, #FFF);
 	width: 100px;
 	height: 40px;
-	border-radius: 5px;
+	border-radius: 0 0 5px 5px;
+	font-size: 1.1rem;
+}
+
+input:not([type="radio"]):not([type="checkbox"]), select, textarea {
+	min-height: 2.5em;
+	width: 100%;
+	margin-top: 0.5em;
+	resize: vertical;
+}
+
+label, .faux-label, #visited-pages {
+	display: block;
+	margin: 0.75em 0;
+	font-weight: 700;
 }
 
 fieldset {
@@ -45,4 +59,16 @@ fieldset {
 #title, #description {
 	color: var(--neutral-white, #FFF);
 	text-align: center;
+}
+
+h1 {
+	padding-top: 0.5em;
+}
+
+.req-opt {
+	color: var(--primary-purple, #7031C9);
+}
+
+#vp label, #rating label {
+	font-weight: 400;
 }

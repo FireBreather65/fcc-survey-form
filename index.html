@@ -26,7 +26,7 @@
       </fieldset>
 
       <!-- Visited pages -->
-      <fieldset>
+      <fieldset id="vp">
         <p id="visited-pages">Which pages did you visit? <span class="req-opt">(required)</span></p>
         <label for="home">
           <input type="checkbox" id="home" name="home" value="Home" checked />
@@ -55,8 +55,8 @@
       </fieldset>
 
       <!-- Rating -->
-      <fieldset>
-        <p>What would you rate your overall experience with the website? <span class="req-opt">(required)</span></p>
+      <fieldset id="rating">
+        <p class="faux-label">What would you rate your overall experience with the website? <span class="req-opt">(required)</span></p>
         <label for="one">
           <input type="radio" id="one" name="overall" />
           1 (terrible)
@@ -124,9 +124,3 @@
 		<script src="app.js"></script>
   </body>
 </html>
-
-<!--
-Todos:
-- fix form alignment
-- add finishing touches (bold questions/requirements, .req-opt, etc.)
--->
