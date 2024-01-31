@@ -1,6 +1,8 @@
 # Survey Form 📝
 ![Demo image](image.png)
 
+**[You can find the live website here.](https://firebreather65.github.io/fcc-survey-form/)**
+
 ## Inspiration
 This is my submission for freeCodeCamp's [Survey Form certification project!](https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form). The theme was inspired by my need for a survey form for Sweet Comforts Bakery website testers. I was going to use Google Forms, but because of the certification project I decided to make my own.
 
@@ -15,5 +17,3 @@ I learned a lot about HTML forms while creating this project, most notably `<inp
 
 ## Future plans
 I'd love to fix the 405 error that occurs upon form submission. I'd also love to learn a server-side language to save the user's inputs to a database.
-
-**[You can find the live website here.](https://firebreather65.github.io/fcc-survey-form/)**
